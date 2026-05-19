@@ -1,0 +1,25 @@
+hr {
+    border: none;
+    border-top: 2px solid #c00000;
+}
+pre {
+    background: #111;
+    color: #00ff88;
+
+    padding: 15px;
+
+    border-left: 4px solid #00ff88;
+
+    overflow-x: auto;
+}
+::selection {
+    background: #c00000;
+    color: white;
+}
+a {
+    color: #c00000;
+}
+
+a:hover {
+    color: #ff4444;
+}
