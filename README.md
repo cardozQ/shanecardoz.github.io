@@ -72,6 +72,17 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000`.
 
+## Writing Workflow
+
+The content system is Markdown-first and publish-to-HTML:
+
+1. Start from `posts/_template.md`
+2. Write and store the source article in `posts/<slug>.md`
+3. Publish the final page as `blog/<slug>.html`
+4. Update the blog index, homepage listings, and RSS feed
+
+This keeps the source material readable and portable while the site remains a plain static HTML project.
+
 ## Coding Standards
 
 - Use semantic HTML.

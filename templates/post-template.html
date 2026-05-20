@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }} | Shane Cardoz</title>
+        <meta name="description" content="{{ description }}" />
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <div class="site-shell">
+            <header class="site-header">
+                <p class="prompt-line" aria-label="shell prompt">
+                    <span>shane@freebsd</span>:<span>~</span>$ less
+                    {{ slug }}.txt
+                </p>
+                <nav class="prompt-nav" aria-label="primary">
+                    <a href="../index.html">Home</a>
+                    <a href="index.html">Blog</a>
+                    <a href="../about.html">About</a>
+                    <a href="../notes.html">Notes</a>
+                    <a href="../rss/feed.xml">RSS</a>
+                    <span class="nav-state">theme: system</span>
+                </nav>
+            </header>
+
+            <main id="main-content">
+                <article class="page-section post-layout">
+                    <header class="post-header">
+                        <p class="eyebrow">article</p>
+                        <h1>{{ title }}</h1>
+                        <p class="post-meta">
+                            Published {{ date }} | Category: {{ category }} |
+                            Tags: {{ tags }}
+                        </p>
+                        <pre class="ascii-window ascii-window-compact" aria-label="article header">
+{{ header_block }}
+                        </pre>
+                    </header>
+
+                    <p class="lead">{{ lead }}</p>
+
+                    {{ body }}
+
+                    <footer class="post-footer">
+                        {{ footer_block }}
+                        <nav class="post-nav" aria-label="post navigation">
+                            <a href="{{ previous_link }}">Previous post</a>
+                            <a href="index.html">Back to archive</a>
+                            <a href="{{ next_link }}">Next post</a>
+                        </nav>
+                    </footer>
+                </article>
+            </main>
+
+            <footer class="site-footer">
+                <p>Reading time: {{ reading_time }}</p>
+                <nav aria-label="footer">
+                    <a href="../sitemap.html">Sitemap</a>
+                    <a href="../rss.html">RSS Info</a>
+                </nav>
+                <pre class="ascii-footer-signature" aria-label="footer signature">
+-- shane@freebsd ------------------------------------------------
+                </pre>
+            </footer>
+        </div>
+    </body>
+</html>

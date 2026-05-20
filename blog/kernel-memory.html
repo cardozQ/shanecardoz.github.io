@@ -36,6 +36,15 @@
                             Published 2026-05-20 | Category: Performance |
                             Tags: memory, reclaim, observability
                         </p>
+                        <p class="post-meta">
+                            Reading time: 3 min | Source:
+                            <code>posts/kernel-memory.md</code>
+                        </p>
+                        <pre class="ascii-window ascii-window-compact" aria-label="article header">
+vmstat(8) quick view
+
+focus: reclaim, faults, pressure
+                        </pre>
                     </header>
 
                     <p class="lead">
@@ -67,7 +76,7 @@
                         runtime context.
                     </p>
 
-                    <pre class="ascii-block" aria-label="memory checklist">
+                    <pre class="ascii-window" aria-label="memory checklist">
 [ pressure checklist ]
 - identify reclaim path
 - separate cache growth from stress
@@ -82,6 +91,10 @@
                     </p>
 
                     <footer class="post-footer">
+                        <pre class="ascii-warning" aria-label="debugging note">
+[ warning ]
+memory usage is not the diagnosis
+                        </pre>
                         <nav class="post-nav" aria-label="post navigation">
                             <a href="first-post.html">Previous post</a>
                             <a href="index.html">Back to archive</a>
@@ -96,6 +109,9 @@
                     <a href="../sitemap.html">Sitemap</a>
                     <a href="../rss.html">RSS Info</a>
                 </nav>
+                <pre class="ascii-footer-signature" aria-label="footer signature">
+-- shane@freebsd ------------------------------------------------
+                </pre>
             </footer>
         </div>
     </body>
