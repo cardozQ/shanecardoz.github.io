@@ -1,0 +1,53 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f3efe4;
+        --surface: #faf6ed;
+        --surface-elevated: #f2ecdd;
+        --surface-muted: #ece5d5;
+        --text: #1b201d;
+        --muted: #59635b;
+        --accent: #0c7d46;
+        --accent-dim: #c9e4d2;
+        --link: #005da3;
+        --warning: #875900;
+        --border: #c4ccbf;
+        --shadow: rgba(51, 59, 51, 0.08);
+        --glow: rgba(12, 125, 70, 0.08);
+        --scanline: rgba(0, 0, 0, 0.03);
+    }
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top, var(--glow), transparent 32%),
+        var(--bg);
+    color: var(--text);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 2px,
+            var(--scanline) 3px,
+            transparent 4px
+        );
+    background-size: 100% 4px;
+    opacity: 0.3;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+:focus-visible {
+    outline: 2px solid var(--warning);
+    outline-offset: 2px;
+}

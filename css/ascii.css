@@ -1,0 +1,29 @@
+.ascii-block {
+    padding: var(--space-3);
+    color: var(--accent);
+    border-left: 4px solid var(--accent);
+    overflow-x: auto;
+    white-space: pre;
+    text-shadow: 0 0 0.4rem var(--glow);
+}
+
+.ascii-hero {
+    max-width: 100%;
+}
+
+.ascii-panel .ascii-block {
+    background:
+        linear-gradient(180deg, var(--surface-muted), var(--surface));
+}
+
+.prompt-line,
+.ascii-block {
+    letter-spacing: 0;
+}
+
+@media (max-width: 640px) {
+    .ascii-block {
+        padding: var(--space-2);
+        font-size: 0.88rem;
+    }
+}
