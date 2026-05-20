@@ -11,6 +11,19 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body class="home-index">
+        <input
+            class="theme-mode"
+            type="radio"
+            name="theme-mode"
+            id="theme-dark"
+            checked
+        />
+        <input
+            class="theme-mode"
+            type="radio"
+            name="theme-mode"
+            id="theme-light"
+        />
         <div class="site-shell">
             <header class="site-header">
                 <p class="prompt-line" aria-label="shell prompt">
@@ -22,7 +35,11 @@
                     <a href="about.html">About</a>
                     <a href="notes.html">Notes</a>
                     <a href="rss/feed.xml">RSS</a>
-                    <span class="nav-state">theme: system</span>
+                    <span class="theme-switch" aria-label="theme mode">
+                        <label for="theme-dark">dark</label>
+                        <span>/</span>
+                        <label for="theme-light">light</label>
+                    </span>
                 </nav>
             </header>
 
@@ -131,7 +148,7 @@
                     </div>
                     <ul class="home-meta">
                         <li><strong>stack</strong>: html + css</li>
-                        <li><strong>theme</strong>: system default</li>
+                        <li><strong>theme</strong>: css-only dark/light toggle</li>
                         <li><strong>target</strong>: github pages</li>
                         <li><strong>javascript</strong>: avoided unless required</li>
                     </ul>

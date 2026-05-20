@@ -7,6 +7,19 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
+        <input
+            class="theme-mode"
+            type="radio"
+            name="theme-mode"
+            id="theme-dark"
+            checked
+        />
+        <input
+            class="theme-mode"
+            type="radio"
+            name="theme-mode"
+            id="theme-light"
+        />
         <div class="site-shell">
             <header class="site-header">
                 <p class="prompt-line"><span>shane@freebsd</span>:<span>~</span>$ find blog -type f</p>
@@ -16,7 +29,11 @@
                     <a aria-current="page" href="categories.html">Categories</a>
                     <a href="tags.html">Tags</a>
                     <a href="../rss/feed.xml">RSS</a>
-                    <span class="nav-state">theme: system</span>
+                    <span class="theme-switch" aria-label="theme mode">
+                        <label for="theme-dark">dark</label>
+                        <span>/</span>
+                        <label for="theme-light">light</label>
+                    </span>
                 </nav>
             </header>
             <main id="main-content">

@@ -30,6 +30,31 @@
     display: inline-block;
 }
 
+.theme-mode {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.theme-switch {
+    display: inline-flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.theme-switch label {
+    cursor: pointer;
+    color: var(--muted);
+}
+
+body:has(#theme-dark:checked) label[for="theme-dark"],
+body:has(#theme-light:checked) label[for="theme-light"] {
+    color: var(--accent);
+}
+
 .prompt-nav a[aria-current="page"] {
     color: var(--accent);
     text-shadow: 0 0 0.45rem var(--glow);
