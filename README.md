@@ -110,6 +110,32 @@ Suggested naming pattern:
 
 Target deployment is GitHub Pages from the repository after the base pages and feed are in place.
 
+The repository includes a GitHub Actions workflow at `.github/workflows/pages.yml`.
+It publishes only the public site files to GitHub Pages:
+
+- HTML pages
+- `css/`
+- `blog/`
+- `rss/`
+- `assets/`
+- `ascii/`
+- `robots.txt`
+- `sitemap.xml`
+
+Markdown source files in `posts/`, templates in `templates/`, and roadmap files are intentionally not included in the deployed artifact.
+
+To deploy:
+
+1. Push changes to `main`.
+2. In GitHub repository settings, set Pages source to GitHub Actions.
+3. Wait for the `Deploy GitHub Pages` workflow to complete.
+
+The expected public URL is:
+
+```text
+https://shanecardoz.github.io/
+```
+
 ## Next Phase
 
 Phase 2 should build a shared page shell across:

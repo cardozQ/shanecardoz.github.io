@@ -25,4 +25,5 @@
     --space-6: 3rem;
     --space-7: 4rem;
     --line-strong: 1px solid var(--border);
+    --touch-target: 2.5rem;
 }

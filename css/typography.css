@@ -1,6 +1,7 @@
 body {
     font-family: "IBM Plex Mono", "Fira Code", "Cascadia Mono", "SFMono-Regular",
         Consolas, "Liberation Mono", Menlo, monospace;
+    overflow-wrap: anywhere;
 }
 
 h1,
@@ -29,6 +30,11 @@ blockquote {
     max-width: var(--measure);
 }
 
+li,
+p {
+    text-wrap: pretty;
+}
+
 a {
     color: var(--link);
     text-decoration-thickness: 0.08em;
@@ -52,6 +58,7 @@ kbd {
     background: var(--surface-muted);
     border: 1px solid var(--border);
     padding: 0.05rem 0.35rem;
+    overflow-wrap: anywhere;
 }
 
 .lead {

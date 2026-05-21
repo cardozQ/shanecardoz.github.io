@@ -44,6 +44,10 @@ body {
     margin-top: var(--space-5);
 }
 
+#main-content:focus {
+    outline: none;
+}
+
 .page-section {
     display: grid;
     gap: var(--space-3);
@@ -76,5 +80,9 @@ body {
     #main-content {
         gap: var(--space-4);
         margin-top: var(--space-4);
+    }
+
+    .site-footer {
+        align-items: flex-start;
     }
 }
